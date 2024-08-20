@@ -7,7 +7,6 @@ import os
 class InferlessPythonModel:
     def initialize(self):
         self.pipe = FluxPipeline.from_pretrained("black-forest-labs/FLUX.1-schnell", torch_dtype=torch.bfloat16).to("cuda")
-        self.generator = torch.Generator("cuda").manual_seed(0)  # Ensure reproducibility
 
     def infer(self, inputs):
         prompt = inputs["prompt"]
@@ -22,7 +21,6 @@ class InferlessPythonModel:
             guidance_scale=guidance_scale,
             num_inference_steps=inference_steps,
             max_sequence_length=max_sequence_length,
-            generator=self.generator
         ).images[0]
 
         buff = BytesIO()
