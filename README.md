@@ -1,5 +1,5 @@
 # Model Template - FLUX.1-schnell
-[FLUX.1-schnell](https://huggingface.co/black-forest-labs/FLUX.1-schnell) is an open-source image generation model developed by Black Forest Labs. It is a 12 billion parameter rectified flow transformer capable of generating images from text descriptions.
+[FLUX.1-schnell](https://huggingface.co/black-forest-labs/FLUX.1-schnell) is an open-source image generation model from the FLUX.1 suite of text-to-image models that define a new state-of-the-art in image detail, prompt adherence, style diversity and scene complexity for text-to-image synthesis. FLUX.1 suite developed by Black Forest Labs. It is a 12 billion parameter rectified flow transformer capable of generating images from text descriptions.
 
 ### Fork the Repository
 Get started by forking the repository. You can do this by clicking on the fork button in the top right corner of the repository page.
