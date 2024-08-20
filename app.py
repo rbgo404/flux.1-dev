@@ -2,7 +2,6 @@ from diffusers import FluxPipeline
 import torch
 from io import BytesIO
 import base64
-import os
 
 class InferlessPythonModel:
     def initialize(self):
