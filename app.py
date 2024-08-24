@@ -12,7 +12,7 @@ class InferlessPythonModel:
         height = inputs.get("height", 512)
         width = inputs.get("width", 512)
         guidance_scale = inputs.get("guidance_scale", 7.5)
-        num_inference_steps = inputs.get("num_inference_steps", 50)
+        num_inference_steps = inputs.get("num_inference_steps", 4)
         max_sequence_length = inputs.get("max_sequence_length", 256)
 
         image = self.pipe(
