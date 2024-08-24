@@ -21,7 +21,7 @@ INPUT_SCHEMA = {
         'datatype': 'INT16',
         'required': False,
         'shape': [1],
-        'example': [50]
+        'example': [4]
     },
     "guidance_scale": {
         'datatype': 'FP32',
