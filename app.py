@@ -5,7 +5,7 @@ import base64
 
 class InferlessPythonModel:
     def initialize(self):
-        self.pipe = FluxPipeline.from_pretrained("black-forest-labs/FLUX.1-schnell", torch_dtype=torch.bfloat16).to("cuda")
+        self.pipe = FluxPipeline.from_pretrained("black-forest-labs/FLUX.1-dev", torch_dtype=torch.bfloat16).to("cuda")
 
     def infer(self, inputs):
         prompt = inputs["prompt"]
